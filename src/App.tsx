@@ -3,6 +3,9 @@ import './App.css';
 import InputField from './components/InputField';
 import { Todo } from './models';
 import TodoList from './components/TodoList';
+import { Routes, Route } from 'react-router-dom';
+import TestDemo from './components/TestDemo';
+import Input from './components/Input';
 
 const App: React.FC = () => {
 
@@ -21,10 +24,18 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
-      <span className='heading'>To Do</span>
-      <InputField todo={todo} setToDo={setToDo} handleAdd={handleAdd}/>
-      <TodoList todos={todos} setTodos={setToDos}/>
+      {/* <span className='heading'>To Do</span> */}
+      {/* <InputField todo={todo} setToDo={setToDo} handleAdd={handleAdd}/>
+      <TodoList todos={todos} setTodos={setToDos}/> */}
+
+      {/* <div className="test_demo"> */}
+
+        <TestDemo/>
+      {/* </div> */}
+      
+
     </div>
+
   );
 }
 
